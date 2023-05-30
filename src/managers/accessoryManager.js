@@ -1,5 +1,7 @@
-const Accessory = require('../models/Acccessory');
+const Accessory = require("../models/Acccessory");
 
 exports.getAll = () => Accessory.find();
 
 exports.create = (accessoryData) => Accessory.create(accessoryData);
+
+exports.getOthers = (accessoryIds) => Accessory.find({ _id: { $nin: accessoryIds } });
