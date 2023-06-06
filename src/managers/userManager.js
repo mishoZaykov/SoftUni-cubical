@@ -25,5 +25,5 @@ exports.login = async (username, password) => {
   }
   const token = await jwt.sign(payload, SECRET, {expiresIn: '2d'});
 
-  return user;
+  return token;
 };
