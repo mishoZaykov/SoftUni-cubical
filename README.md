@@ -1,2 +1,2 @@
-# SoftUni-cubicle
+# SoftUni-Cubicle
 SoftUni course project workshop
